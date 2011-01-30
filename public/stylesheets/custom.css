@@ -1,0 +1,137 @@
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+	background-color:#F2F2F2;
+}
+
+/* Header */
+header {
+	position:relative;
+   height:100px;
+	background-color:black;
+}
+
+#tab {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	border-top-style:solid;
+	border-top-color:#53453A;
+	border-top-width:1px;
+	background-color:#332921;
+	height:40px;
+}
+
+/* Page */
+#page {
+	width:90%;
+	margin:auto;
+	margin-top:2%;
+	margin-bottom:2%;
+   padding-bottom:100px;   /* Height of the footer */
+}
+
+#content {
+	width:70%;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color:#DDDDDD;
+}
+
+.title {
+	height:60px;
+	background-color:#F7F7F7;
+	padding:20px 0 0 40px;
+}
+
+.title h1 {
+	color:#4A4A4A;
+}
+
+.new {
+	border-top-style:solid;
+	border-top-width:1px;
+	border-top-color:#DDDDDD;
+	padding:20px;
+}
+
+.timestamp {
+	float:right;
+	font-style:italic;
+	font-size:0.5em;
+}
+
+.pagination_div {
+	border-top-style:solid;
+	border-top-width:1px;
+	border-top-color:#DDDDDD;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20%;
+	text-align:center;
+}
+
+.pagination a, em, span {
+	font-size:11px;
+	float:left;
+	border:solid 1px #9aafe5;
+	margin-right:2px;
+	color:#4A4A4A;
+	border-style:solid;
+	border-width:1px;
+	border-color:#DDDDDD;
+	background-color:#F2F2F2;
+	padding:5px;
+}
+
+.pagination .disabled {
+	color:#888888;
+	font-style:italic;
+	display:block;
+	font-weight:bold;
+	margin-right:2px;
+}
+
+.pagination .next_page,
+.pagination .previous_page {
+	font-weight:bold;
+}
+
+.pagination em { 	/* Acitve page */
+	background:#2e6ab1;
+	color:#FFFFFF;
+	font-weight:bold;
+	display:block;
+}
+.pagination a:link,
+.pagination a:visited {
+	color:#0e509e
+	display:block;
+	text-decoration:none;
+}
+
+.pagination a:hover{
+	background-color:white;
+}
+
+#menu {
+	float:right;
+	width:28%;
+}
+
+/*Footer*/
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:100px;   /* Height of the footer */
+   background:#6cf;
+}

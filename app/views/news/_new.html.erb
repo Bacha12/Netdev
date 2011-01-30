@@ -1,0 +1,7 @@
+<article class="new">
+	<h3><%= new.title %></h3>
+	<p><%= new.content %></p>
+	<span class="timestamp">
+			Posted <%= time_ago_in_words(new.created_at) %> ago
+	</span>
+</article>

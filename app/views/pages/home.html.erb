@@ -1,0 +1,5 @@
+<%= render @news %>
+<section class="pagination_div">
+	<%= will_paginate @news, :inner_window => 2 %>
+	<div class="clear"></div>
+</section>

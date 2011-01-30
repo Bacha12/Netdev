@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Netdev | <%= @title %></title>
+  	<%= javascript_include_tag :defaults %>
+  	<%= csrf_meta_tag %>
+	<%= render 'layouts/stylesheets' %>
+</head>
+<body>
+	<div id="container">
+		<%= render "layouts/header" %>
+		<section id="page">
+			<nav id="menu">
+				Ceci contient le menu
+			</nav>
+			<div id="content">
+				<section class="title">
+					<h1><%= @title %></h1>
+				</section>
+				<%= yield %>
+			</div>
+			<div class="clear"></div>
+		</section>
+		<%= render "layouts/footer" %>
+	</div>
+</body>
+</html>
