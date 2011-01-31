@@ -2,7 +2,7 @@ class New < ActiveRecord::Base
   attr_accessible :title, :content
   
   cattr_reader :per_page
-  @@per_page = 3
+  @@per_page = 10
   
   validates :title, :presence => true
   validates :content, :presence => true

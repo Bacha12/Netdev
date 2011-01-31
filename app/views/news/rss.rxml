@@ -1,0 +1,21 @@
+xml.instruct!
+
+xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+  xml.channel do
+    
+    xml.title       "Netdev RSS feed"
+    #xml.link        url_for :only_path => false, :controller => 'news'
+    xml.description "Contains the different news posted on the website http://netdev.heroku.com"
+
+    @news.each do |new|
+      xml.item do
+        xml.title       new.title
+        #xml.link        url_for :only_path => false, :controller => 'news', :action => 'show', :id => new.id
+        xml.description new.content
+        #xml.guid        url_for :only_path => false, :controller => 'news', :action => 'show', :id => new.id
+        xml.pubDate     new.updated_at.to_s(:rfc822)
+      end
+    end
+
+  end
+end

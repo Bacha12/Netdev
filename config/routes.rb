@@ -1,6 +1,7 @@
 Netdev::Application.routes.draw do
-  
 
+  get '/news/rss'
+  
   match "/articles", :to => "pages#articles"
   match "/about", :to => "pages#about"
 
